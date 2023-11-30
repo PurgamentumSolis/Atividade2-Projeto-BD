@@ -29,12 +29,12 @@ Seguindo a imagem do banco relacional
 Para relizar a inserção foi feito o tratamento da query https://db-book.com/university-lab-dir/sample_tables-dir/index.html manualemente e para cada Collection foi feito um script.
 <h4>Section</h4>
 
-Exemplo:
+Exemplo:<br>
 {"course_id": "BIO-101", "sec_id": "1", "semester": "Summer", "year": "2017", "building": "Painter", "room_no": "514", "time_slot_id": "B", "capacity": "10"},
 
 <h4>Department</h4>
 
-Exemplo:
+Exemplo:<br>
 {
         "dept_name": "Biology",
         "building": "Watson",
@@ -54,7 +54,7 @@ Exemplo:
     },
     
 <h4>Student</h4>
-Exemplo:
+Exemplo:<br>
 {
     "student_id": "00128",
     "name": "Zhang",
@@ -67,7 +67,7 @@ Exemplo:
 }
 
 <h4>Course</h4>
-Exemplo:
+Exemplo:<br>
 {"idCourse": "BIO-101", "title": "Intro. to Biology", "dept_name": "Biology", "credits": 4},
 
 <h4>Time_slot</h4>
