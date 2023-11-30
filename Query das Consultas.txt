@@ -1,0 +1,110 @@
+EX1(Projeto_de_Dados.Department)
+
+([
+  {
+    $unwind: "$instructors"
+  },
+  {
+    $unwind: "$instructors.advising"
+  },
+  {
+    $lookup: {
+      from: "Student",
+      localField: "instructors.advising",
+      foreignField: "student_id",
+      as: "AlunoAdvising"
+    },
+  },
+  {
+    $unwind: "$instructors.teaches"
+  },
+  {
+    $unwind: "$AlunoAdvising"
+  },
+  {
+    $unwind: "$AlunoAdvising.takes"
+  },
+  {$match:{$expr:{$eq:["$AlunoAdvising.takes.course_id", "$instructors.teaches.course_id"]}}},
+   {$match:{$expr:{$eq:["$AlunoAdvising.takes.sec_id", "$instructors.teaches.sec_id"]}}},
+	
+ {
+    $lookup: {
+      from: "Course",
+      localField: "instructors.teaches.course_id",
+      foreignField: "idCourse",
+      as: "DadosCurso"
+    },
+  },
+	{
+    $unwind: "$DadosCurso"
+  },
+  
+  
+  {  $project: {
+      student_name: "$AlunoAdvising.name",
+      instructor_name: "$instructors.name",
+      course_title: "$DadosCurso.title",
+    }}
+  
+  
+
+])
+
+
+EX2 (Projeto_de_Dados.Department)
+
+([
+  {
+    $unwind: "$instructors"
+  },
+  {
+    $unwind: "$instructors.teaches"
+  },
+  {
+    $lookup: {
+      from: "Section",
+      localField: "instructors.teaches.course_id",
+      foreignField: "course_id",
+      as: "DadosCurso"
+    },
+  },
+   {
+    $unwind: "$DadosCurso"
+  },
+  
+  {  $project: {
+      instructor_name: "$instructors.name",
+      Predio: "$DadosCurso.building",
+      Numero: "$DadosCurso.room_no",
+    }}
+])
+
+
+EXERCICIO 3
+
+([
+  {
+    $lookup: {
+      from: "Student",
+      localField: "dept_name",
+      foreignField: "dpt_name",
+      as: "alunos"
+    },
+  },
+  {
+     $addFields: {
+       ArraySalario: [ "$instructors.salary"]
+     }
+   },
+  {
+    $unwind: "$ArraySalario",
+  },
+  {
+      $project: {
+         item: 1,
+         Departamento: "$dept_name",
+         MediaSalarial: { $avg: "$ArraySalario"},
+         NumeroDeAlunos: {  $size: "$alunos" }
+      }
+   }
+])
