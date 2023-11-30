@@ -1,0 +1,25 @@
+[
+{"time_slot_id": "B", "days": [{"week_day": "M", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"},
+                                {"week_day": "W", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"},
+                                {"week_day": "F", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"}]},
+
+{"time_slot_id": "C", "days": [{"week_day": "M", "start_hour": "11", "start_min": "0", "end_hour": "11", "end_min": "50"},
+                                {"week_day": "W", "start_hour": "11", "start_min": "0", "end_hour": "11", "end_min": "50"},
+                                {"week_day": "F", "start_hour": "11", "start_min": "0", "end_hour": "11", "end_min": "50"}]},
+
+{"time_slot_id": "D", "days": [{"week_day": "M", "start_hour": "13", "start_min": "0", "end_hour": "13", "end_min": "50"},
+                                {"week_day": "W", "start_hour": "13", "start_min": "0", "end_hour": "13", "end_min": "50"},
+                                {"week_day": "F", "start_hour": "13", "start_min": "0", "end_hour": "13", "end_min": "50"}]},
+
+{"time_slot_id": "E", "days": [{"week_day": "T", "start_hour": "10", "start_min": "30", "end_hour": "11", "end_min": "45"},
+                                {"week_day": "R", "start_hour": "10", "start_min": "30", "end_hour": "11", "end_min": "45"}]},
+
+{"time_slot_id": "F", "days": [{"week_day": "T", "start_hour": "14", "start_min": "30", "end_hour": "15", "end_min": "45"},
+                                {"week_day": "R", "start_hour": "14", "start_min": "30", "end_hour": "15", "end_min": "45"}]},
+
+{"time_slot_id": "G", "days": [{"week_day": "M", "start_hour": "16", "start_min": "0", "end_hour": "16", "end_min": "50"},
+                                {"week_day": "W", "start_hour": "16", "start_min": "0", "end_hour": "16", "end_min": "50"},
+                                {"week_day": "F", "start_hour": "16", "start_min": "0", "end_hour": "16", "end_min": "50"}]},
+
+{"time_slot_id": "H", "days": [{"week_day": "W", "start_hour": "10", "start_min": "0", "end_hour": "12", "end_min": "30"}]}
+]

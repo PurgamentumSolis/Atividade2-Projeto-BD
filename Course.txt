@@ -1,0 +1,15 @@
+[
+{"idCourse": "BIO-101", "title": "Intro. to Biology", "dept_name": "Biology", "credits": 4},
+{"idCourse": "BIO-301", "title": "Genetics", "dept_name": "Biology", "credits": 4},
+{"idCourse": "BIO-399", "title": "Computational Biology", "dept_name": "Biology", "credits": 3},
+{"idCourse": "CS-101", "title": "Intro. to Computer Science", "dept_name": "Comp. Sci.", "credits": 4},
+{"idCourse": "CS-190", "title": "Game Design", "dept_name": "Comp. Sci.", "credits": 4},
+{"idCourse": "CS-315", "title": "Robotics", "dept_name": "Comp. Sci.", "credits": 3},
+{"idCourse": "CS-319", "title": "Image Processing", "dept_name": "Comp. Sci.", "credits": 3},
+{"idCourse": "CS-347", "title": "Database System Concepts", "dept_name": "Comp. Sci.", "credits": 3},
+{"idCourse": "EE-181", "title": "Intro. to Digital Systems", "dept_name": "Elec. Eng.", "credits": 3},
+{"idCourse": "FIN-201", "title": "Investment Banking", "dept_name": "Finance", "credits": 3},
+{"idCourse": "HIS-351", "title": "World History", "dept_name": "History", "credits": 3},
+{"idCourse": "MU-199", "title": "Music Video Production", "dept_name": "Music", "credits": 3},
+{"idCourse": "PHY-101", "title": "Physical Principles", "dept_name": "Physics", "credits": 4}
+]

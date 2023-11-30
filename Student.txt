@@ -1,0 +1,139 @@
+[
+{
+    "student_id": "00128",
+    "name": "Zhang",
+    "dpt_name": "Comp. Sci.",
+    "total_cred": "102",
+    "takes": [
+        {"course_id": "CS-101", "sec_id": "1", "grade": "A"},
+        {"course_id": "CS-347", "sec_id": "1", "grade": "A-"}
+    ]
+},
+
+{
+    "student_id": "12345",
+    "name": "Shankar",
+    "dpt_name": "Comp. Sci.",
+    "total_cred": "32",
+    "takes": [
+        {"course_id": "CS-101", "sec_id": "1", "grade": "C"},
+        {"course_id": "CS-190", "sec_id": "2", "grade": "A"},
+        {"course_id": "CS-315", "sec_id": "1", "grade": "A"},
+        {"course_id": "CS-347", "sec_id": "1", "grade": "A"}
+    ]
+},
+
+{
+    "student_id": "19991",
+    "name": "Brandt",
+    "dpt_name": "History",
+    "total_cred": "80",
+    "takes": [
+        {"course_id": "HIS-351", "sec_id": "1", "grade": "B"}
+    ]
+},
+
+{
+    "student_id": "23121",
+    "name": "Chavez",
+    "dpt_name": "Finance",
+    "total_cred": "110",
+    "takes": [
+        {"course_id": "FIN-201", "sec_id": "1", "grade": "C+"}
+    ]
+},
+
+{
+    "student_id": "44553",
+    "name": "Peltier",
+    "dpt_name": "Physics",
+    "total_cred": "56",
+    "takes": [
+        {"course_id": "PHY-101", "sec_id": "1", "grade": "B-"}
+    ]
+},
+
+{
+    "student_id": "45678",
+    "name": "Levy",
+    "dpt_name": "Physics",
+    "total_cred": "46",
+    "takes": [
+        {"course_id": "CS-101", "sec_id": "1", "grade": "F"},
+        {"course_id": "CS-101", "sec_id": "1", "grade": "B+"},
+        {"course_id": "CS-319", "sec_id": "1", "grade": "B"}
+    ]
+},
+
+{
+    "student_id": "54321",
+    "name": "Williams",
+    "dpt_name": "Comp. Sci.",
+    "total_cred": "54",
+    "takes": [
+        {"course_id": "CS-101", "sec_id": "1", "grade": "A-"},
+        {"course_id": "CS-190", "sec_id": "2", "grade": "B+"}
+    ]
+},
+
+{
+    "student_id": "55739",
+    "name": "Sanchez",
+    "dpt_name": "Music",
+    "total_cred": "38",
+    "takes": [
+        {"course_id": "MU-199", "sec_id": "1", "grade": "A-"}
+    ]
+},
+
+{
+    "student_id": "70557",
+    "name": "Snow",
+    "dpt_name": "Physics",
+    "total_cred": "0",
+    "takes": []
+},
+
+{
+    "student_id": "76543",
+    "name": "Brown",
+    "dpt_name": "Comp. Sci.",
+    "total_cred": "58",
+    "takes": [
+        {"course_id": "CS-101", "sec_id": "1", "grade": "A"},
+        {"course_id": "CS-319", "sec_id": "2", "grade": "A"}
+    ]
+},
+
+{
+    "student_id": "76653",
+    "name": "Aoi",
+    "dpt_name": "Elec. Eng.",
+    "total_cred": "60",
+    "takes": [
+        {"course_id": "EE-181", "sec_id": "1", "grade": "C"}
+    ]
+},
+
+{
+    "student_id": "98765",
+    "name": "Bourikas",
+    "dpt_name": "Elec. Eng.",
+    "total_cred": "98",
+    "takes": [
+        {"course_id": "CS-101", "sec_id": "1", "grade": "C-"},
+        {"course_id": "CS-315", "sec_id": "1", "grade": "B"}
+    ]
+},
+
+{
+    "student_id": "98988",
+    "name": "Tanaka",
+    "dpt_name": "Biology",
+    "total_cred": "120",
+    "takes": [
+        {"course_id": "BIO-101", "sec_id": "1", "grade": "A"},
+        {"course_id": "BIO-301", "sec_id": "1", "grade": null}
+    ]
+}
+]
