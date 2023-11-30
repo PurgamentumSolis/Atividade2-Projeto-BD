@@ -28,7 +28,7 @@ Seguindo a imagem do banco relacional
 <h2>Scripts para inserção</h2>
 Para relizar a inserção foi feito o tratamento da query https://db-book.com/university-lab-dir/sample_tables-dir/index.html manualemente e para cada Collection foi feito um script.
 <h4>Section</h4>
-[Uploading Section.txt…]()
+
 Exemplo:
 {"course_id": "BIO-101", "sec_id": "1", "semester": "Summer", "year": "2017", "building": "Painter", "room_no": "514", "time_slot_id": "B", "capacity": "10"},
 
@@ -54,7 +54,7 @@ Exemplo:
     },
     
 <h4>Student</h4>
-
+Exemplo:
 {
     "student_id": "00128",
     "name": "Zhang",
@@ -67,11 +67,11 @@ Exemplo:
 }
 
 <h4>Course</h4>
-
+Exemplo:
 {"idCourse": "BIO-101", "title": "Intro. to Biology", "dept_name": "Biology", "credits": 4},
 
 <h4>Time_slot</h4>
-
+Exemplo:
 {"time_slot_id": "B", "days": [{"week_day": "M", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"},
                                 {"week_day": "W", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"},
                                 {"week_day": "F", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"}]}
