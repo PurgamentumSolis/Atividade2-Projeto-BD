@@ -1,4 +1,4 @@
-[Time_slot.txt](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/files/13507083/Time_slot.txt)[Course.txt](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/files/13507082/Course.txt)[Student.txt](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/files/13507081/Student.txt)[Department.txt](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/files/13507079/Department.txt)[Section.txt](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/files/13507076/Section.txt)# Atividade2-Projeto-BD
+Atividade2-Projeto-BD
 Atividade2 Projeto BD, 6 semeste
 
 integrantes:<br>
