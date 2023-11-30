@@ -132,8 +132,77 @@ Foram feitas querys no Aggreagation do MongoDB Atlas. <strong>Todas as querys de
 - Output
   ![atv](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/assets/91858664/87f844fe-1ad3-4b9e-91e2-2efd92d76f9d)
 
-  
+<h3>Consulta 1</h3>
 
+<strong>Qual sala (prédio e número) cada professor dá aula?</strong>
+
+- Query
+
+([
+  {
+    $unwind: "$instructors"
+  },
+  {
+    $unwind: "$instructors.teaches"
+  },
+  {
+    $lookup: {
+      from: "Section",
+      localField: "instructors.teaches.course_id",
+      foreignField: "course_id",
+      as: "DadosCurso"
+    },
+  },
+   {
+    $unwind: "$DadosCurso"
+  },
+  
+  {  $project: {
+      instructor_name: "$instructors.name",
+      Predio: "$DadosCurso.building",
+      Numero: "$DadosCurso.room_no",
+    }}
+])
+
+- Output
+![atv2](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/assets/91858664/ff5da06a-6811-44e3-b3ce-21242d856c27)
+
+<h3>Consulta 3</h3>
+
+<strong>Qual o nome, orçamento, total de alunos e salário médio de cada departamento?</strong>
+
+- Query
+
+([
+  {
+    $lookup: {
+      from: "Student",
+      localField: "dept_name",
+      foreignField: "dpt_name",
+      as: "alunos"
+    },
+  },
+  {
+     $addFields: {
+       ArraySalario: [ "$instructors.salary"]
+     }
+   },
+  {
+    $unwind: "$ArraySalario",
+  },
+  {
+      $project: {
+         item: 1,
+         Departamento: "$dept_name",
+         MediaSalarial: { $avg: "$ArraySalario"},
+         NumeroDeAlunos: {  $size: "$alunos" }
+      }
+   }
+])
+
+- Output
+ ![atv3](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/assets/91858664/4fd42fdb-9089-4393-84ce-41780d36df07)
+ 
 
 
 
