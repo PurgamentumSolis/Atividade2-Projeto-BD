@@ -26,7 +26,7 @@ Seguindo a imagem do banco relacional
 - Vermelho -> Time_slot
 
 <h2>Scripts para inserção</h2>
-Para relizar a inserção foi feito o tratamento da query https://db-book.com/university-lab-dir/sample_tables-dir/index.html manualemente e para cada Collection foi feito um script.
+Para relizar a inserção foi feito o tratamento da query https://db-book.com/university-lab-dir/sample_tables-dir/index.html manualemente e para cada Collection foi feito um script. Os scripts para inserção no mongo estarão no repositório com o nome da Collection.
 <h4>Section</h4>
 
 Exemplo:<br>
@@ -76,6 +76,63 @@ Exemplo:
                                 {"week_day": "W", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"},
                                 {"week_day": "F", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"}]}
 
+<h2>Consultas</h2>
+Foram feitas querys no Aggreagation do MongoDB Atlas. <strong>Todas as querys devem ser feitas pela Collection Department</strong>
+
+<h3>Consulta 1</h3>
+
+<strong>Escreva uma query que retorna qual estudante fez qual disciplina do próprio orientador. Retorne apenas o nome do estudante, do professor e da disciplina.</strong>
+
+- Query
+
+([
+  {
+    $unwind: "$instructors"
+  },
+  {
+    $unwind: "$instructors.advising"
+  },
+  {
+    $lookup: {
+      from: "Student",
+      localField: "instructors.advising",
+      foreignField: "student_id",
+      as: "AlunoAdvising"
+    },
+  },
+  {
+    $unwind: "$instructors.teaches"
+  },
+  {
+    $unwind: "$AlunoAdvising"
+  },
+  {
+    $unwind: "$AlunoAdvising.takes"
+  },
+  {$match:{$expr:{$eq:["$AlunoAdvising.takes.course_id", "$instructors.teaches.course_id"]}}},
+   {$match:{$expr:{$eq:["$AlunoAdvising.takes.sec_id", "$instructors.teaches.sec_id"]}}},
+	
+ {
+    $lookup: {
+      from: "Course",
+      localField: "instructors.teaches.course_id",
+      foreignField: "idCourse",
+      as: "DadosCurso"
+    },
+  },
+  {
+    $unwind: "$DadosCurso"
+  },
+  {  $project: {
+      student_name: "$AlunoAdvising.name",
+      instructor_name: "$instructors.name",
+      course_title: "$DadosCurso.title",
+    }}
+])
+- Output
+  ![atv](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/assets/91858664/87f844fe-1ad3-4b9e-91e2-2efd92d76f9d)
+
+  
 
 
 
