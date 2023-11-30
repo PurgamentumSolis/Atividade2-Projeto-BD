@@ -33,7 +33,7 @@ Exemplo:
 {"course_id": "BIO-101", "sec_id": "1", "semester": "Summer", "year": "2017", "building": "Painter", "room_no": "514", "time_slot_id": "B", "capacity": "10"},
 
 <h4>Department</h4>
-[Uploading Department.txt…]()
+
 Exemplo:
 {
         "dept_name": "Biology",
@@ -54,7 +54,7 @@ Exemplo:
     },
     
 <h4>Student</h4>
-[Uploading Student.txt…]()
+
 {
     "student_id": "00128",
     "name": "Zhang",
@@ -67,11 +67,11 @@ Exemplo:
 }
 
 <h4>Course</h4>
-[Uploading Course.txt…]()
+
 {"idCourse": "BIO-101", "title": "Intro. to Biology", "dept_name": "Biology", "credits": 4},
 
 <h4>Time_slot</h4>
-[Uploading Time_slot.txt…]()
+
 {"time_slot_id": "B", "days": [{"week_day": "M", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"},
                                 {"week_day": "W", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"},
                                 {"week_day": "F", "start_hour": "9", "start_min": "0", "end_hour": "9", "end_min": "50"}]}
