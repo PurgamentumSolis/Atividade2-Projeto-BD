@@ -16,4 +16,5 @@ A divisão do banco foi feito em 5 Collections, sendo elas;
 - Time_slot
 <h2>Divisão</h2>
 Seguindo a imagem do banco relacional
-![image](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/assets/91858664/2f3619d3-d40f-4c41-be7d-d2395980fcf9)
+
+![bad](https://github.com/PurgamentumSolis/Atividade2-Projeto-BD/assets/91858664/6c81b8a8-6665-468e-8ad3-e29d0b9ceb3f)
